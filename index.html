@@ -13,7 +13,7 @@
     <!-- Bootstrap Navbar -->
     <div class="navbar-wrapper">
         <nav class="navbar navbar-expand-lg navbar-light container">
-            <a class="navbar-brand" href="#">Zoia</a>
+            <a class="navbar-brand" href="#">Zoia Malá</a>
 
             <!-- Navbar Toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,11 +37,22 @@
 
         <!-- Hero Section -->
         <div class="d-flex justify-content-center mt-5 flex-column flex-sm-row align-items-center gap-3">
-            <div class="mr-2">
-                <h1 class="display-2">Fusion Dance by Zoia</h1>
-                <p>Welcome to Fusion Dance by Zoia, your go-to destination for unforgettable dance performances in the Algarve. With my passion for belly dance and contemporary dance, I offer captivating performances, immersive workshops, and personalized dance services. Whether you’re planning a wedding, corporate event, private celebration, or simply want to explore dance in a fun and educational setting, I’m here to bring your vision to life through the power of movement.</p>
+            <div>
+                <div class="mr-2">
+                    <h1 class="display-2">Fusion Dance by Zoia</h1>
+                    <p>Welcome to Fusion Dance by Zoia, your go-to destination for unforgettable dance performances in the Algarve. With my passion for belly dance and contemporary dance, I offer captivating performances, immersive workshops, and personalized dance services. Whether you’re planning a wedding, corporate event, private celebration, or simply want to explore dance in a fun and educational setting, I’m here to bring your vision to life through the power of movement.</p>
+                </div>
+
+                <div class="d-flex gap-2">
+                    <button type="button" class="btn btn-primary">
+                        Book Show
+                    </button>
+                    <button type="button" class="btn btn-light">
+                        Explore More
+                    </button>
+                </div>
             </div>
-            <img src="./pictures/a562f67b-e024-4495-8449-1c18c3f07a63.jpeg" class="col-12 col-sm-6">
+            <img src="./pictures/a562f67b-e024-4495-8449-1c18c3f07a63.jpeg" class="col-12 col-sm-6 rounded">
         </div>
 
         <!-- About Me Section -->
@@ -63,7 +74,7 @@
         </section>
 
         <!-- Why Choose Me Section -->
-        <section class="mt-4">
+        <section class="mt-5">
             <h2>Why Choose Fusion Dance by Zoia?</h2>
             <ul>
                 <li>Unique Fusion Styles – My performances blend belly dance, contemporary dance, and other influences to create a truly unique experience.</li>
@@ -76,7 +87,7 @@
         </section>
 
         <!-- Gallery Section -->
-        <section>
+        <section class="mt-5">
             <h2>Gallery</h2>
             <div class="container">
                 <div class="row g-3">
@@ -97,14 +108,14 @@
         </section>
 
         <!-- Testimonials Section -->
-        <section>
+        <section class="mt-5">
             <h2>Testimonials – What Clients Are Saying</h2>
             <p>“Fusion Dance by Zoia added a touch of elegance to our wedding. The belly dance performance was simply magical and our guests couldn’t stop talking about it! Highly recommend!” – [Client Name]</p>
             <p>“The contemporary dance workshop was fantastic! Zoia's energy and teaching style made learning so enjoyable. I left feeling more connected to my body and inspired to keep dancing!” – [Workshop Participant]</p>
         </section>
 
         <!-- Booking Section -->
-        <section>
+        <section class="mt-5">
             <h2>Let’s Create Memorable Moments Together!</h2>
             <p>At Fusion Dance by Zoia, it’s not just about the performance—it’s about creating a memorable experience that resonates with your audience and leaves them wanting more. Here’s how you can book your dance experience:</p>
             <ol>
@@ -115,27 +126,27 @@
         </section>
 
         <!-- Contact Form Section -->
-        <section>
+        <section class="mt-5">
             <h2>Contacts</h2>
             <form>
                 <div class="form-row">
                     <div class="form-group col-md-12">
                         <label for="FirstName">First Name:</label>
-                        <input type="text" class="form-control" placeholder="Enter first name">
+                        <input type="text" class="form-control" placeholder="Enter first name" required>
                     </div>
-                    <div class="form-group col-md-12">
+                    <div class="form-group col-md-12 mt-2">
                         <label for="LastName">Last Name:</label>
-                        <input type="text" class="form-control" placeholder="Enter last name">
+                        <input type="text" class="form-control" placeholder="Enter last name" required>
                     </div>
-                    <div class="form-group col-md-12">
+                    <div class="form-group col-md-12 mt-2">
                         <label for="inputEmail14">Email:</label>
                         <input type="email" class="form-control" id="inputEmail14" placeholder="Enter email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
                     </div>
-                    <div class="form-group col-md-12">
+                    <div class="form-group col-md-12 mt-2">
                         <label for="phone">Phone Number:</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter phone number" required />
+                        <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter phone number" />
                     </div>
-                    <div class="form-group col-md-12 mb-2">
+                    <div class="form-group col-md-12 mb-2 mt-2">
                         <label for="message">Message / Additional Information:</label>
                         <textarea id="message" name="message" rows="4" placeholder="Feel free to share any ideas, preferences, or questions you have about the classes." class="form-control"></textarea>
                     </div>
@@ -147,12 +158,12 @@
         </section>
 
         <!-- Footer Section -->
-        <footer>
-            <p>©Copyright 2050 by nobody. All rights reversed.</p>
-        </footer>
-
+        
     </div>
-
+    <footer class="pg-info container-fluid bg-dark text-white">
+        <p>©Copyright 2025 by me. All rights reversed.</p>
+    </footer>
+    
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
