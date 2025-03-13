@@ -1,171 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar Example</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Navbar Example</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
+<body class="bg-gray-100">
 
-    <!-- Bootstrap Navbar -->
-    <div class="navbar-wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light container">
-            <a class="navbar-brand" href="#">Zoia Malá</a>
-
-            <!-- Navbar Toggler -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                </ul>
+    <section class="bg-black h-screen">
+        <!-- Tailwind Navbar -->
+        <nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-100 dark:border-gray-600">
+            <div class="container mx-auto flex items-center justify-between py-4">
+                <!-- Logo with smaller size -->
+                <img src="./pictures/Untitled-1.png" width="120px" class="mr-8">
+        
+                <!-- Navbar Toggler -->
+                <button class="lg:hidden text-white book-btn" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- Navbar Links -->
+                <div class="hidden lg:flex space-x-6 text-sm" id="navbarNav">
+                    <a href="#" class="text-black hover:text-gray-400">Home</a>
+                    <a href="#" class="text-black hover:text-gray-400">About</a>
+                    <a href="./contact.php" class="text-black hover:text-gray-400">Contact</a>
+                </div>
             </div>
         </nav>
-    </div>
-
-    <!-- Main Content -->
-    <div class="container mt-5">
-
-        <!-- Hero Section -->
-        <div class="d-flex justify-content-center mt-5 flex-column flex-sm-row align-items-center gap-3">
-            <div>
-                <div class="mr-2">
-                    <h1 class="display-2">Fusion Dance by Zoia</h1>
-                    <p>Welcome to Fusion Dance by Zoia, your go-to destination for unforgettable dance performances in the Algarve. With my passion for belly dance and contemporary dance, I offer captivating performances, immersive workshops, and personalized dance services. Whether you’re planning a wedding, corporate event, private celebration, or simply want to explore dance in a fun and educational setting, I’m here to bring your vision to life through the power of movement.</p>
-                </div>
-
-                <div class="d-flex gap-2">
-                    <button type="button" class="btn btn-primary">
-                        Book Show
-                    </button>
-                    <button type="button" class="btn btn-light">
-                        Explore More
-                    </button>
-                </div>
-            </div>
-            <img src="./pictures/a562f67b-e024-4495-8449-1c18c3f07a63.jpeg" class="col-12 col-sm-6 rounded">
-        </div>
-
-        <!-- About Me Section -->
-        <article class="mt-5 d-flex flex-column">
-            <h2>About Me</h2>
-            <p>I’m Zoia, a passionate and experienced dancer specializing in belly dance and contemporary styles. With years of performance experience, I bring grace, energy, and storytelling into every movement. My journey in dance has taken me to various stages, private events, and workshops, where I’ve shared my love for artistic expression. My goal is to inspire and connect with audiences through the power of dance.</p>
-        </article>
-
-        <!-- Dance Experiences Section -->
-        <section>
-            <h2 class="mt-5">Dance Experiences</h2>
-            <p>I offer a variety of dance performances and services tailored to your needs:</p>
-            <ul>
-                <li>Belly Dance Shows – Add an exotic and vibrant touch to your event.</li>
-                <li>Contemporary Dance Performances – Expressive and dynamic storytelling through movement.</li>
-                <li>Private & Corporate Events – Customized dance performances for special occasions.</li>
-                <li>Workshops – Learn the art of dance in an engaging and fun atmosphere.</li>
-            </ul>
-        </section>
-
-        <!-- Why Choose Me Section -->
-        <section class="mt-5">
-            <h2>Why Choose Fusion Dance by Zoia?</h2>
-            <ul>
-                <li>Unique Fusion Styles – My performances blend belly dance, contemporary dance, and other influences to create a truly unique experience.</li>
-                <li>Algarve's Premier Dance Experience – Proudly located in the Algarve, I cater to both locals and tourists, bringing the beauty of dance to the region's vibrant cultural scene.</li>
-                <li>Interactive Workshops – These are more than just classes—they’re engaging, fun, and designed to help you connect with dance in a deeper way.</li>
-                <li>Custom-tailored Performances – From corporate events to private parties, I customize each performance to suit the occasion, ensuring that it’s a memorable experience for you and your guests.</li>
-                <li>Bilingual Content – All of my services and communications are available in both Portuguese and English, making it easier for both locals and international clients to enjoy my work.</li>
-                <li>Virtual Dance Sessions – Whether you're in the Algarve or elsewhere, join my live online classes and workshops from anywhere in the world.</li>
-            </ul>
-        </section>
-
-        <!-- Gallery Section -->
-        <section class="mt-5">
-            <h2>Gallery</h2>
-            <div class="container">
-                <div class="row g-3">
-                    <div class="col-12 col-md-6 gallery-item">
-                        <img src="./pictures/2d802016-d710-42f2-b4cc-5c36a2f4eba2.jpeg" class="img-fluid">
-                    </div>
-                    <div class="col-12 col-md-6 gallery-item">
-                        <img src="./pictures/37b9df79-6ac5-4786-8b5a-528bbbaf345a.jpeg" class="img-fluid">
-                    </div>
-                    <div class="col-12 col-md-6 gallery-item">
-                        <img src="./pictures/ee7c9a7d-5162-4951-a43a-6e38efe4298a.jpeg" class="img-fluid">
-                    </div>
-                    <div class="col-12 col-md-6  gallery-item">
-                        <img src="./pictures/6d4681cc-cb96-442f-88b3-5e657f75c60c.jpeg" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="mt-5">
-            <h2>Testimonials – What Clients Are Saying</h2>
-            <p>“Fusion Dance by Zoia added a touch of elegance to our wedding. The belly dance performance was simply magical and our guests couldn’t stop talking about it! Highly recommend!” – [Client Name]</p>
-            <p>“The contemporary dance workshop was fantastic! Zoia's energy and teaching style made learning so enjoyable. I left feeling more connected to my body and inspired to keep dancing!” – [Workshop Participant]</p>
-        </section>
-
-        <!-- Booking Section -->
-        <section class="mt-5">
-            <h2>Let’s Create Memorable Moments Together!</h2>
-            <p>At Fusion Dance by Zoia, it’s not just about the performance—it’s about creating a memorable experience that resonates with your audience and leaves them wanting more. Here’s how you can book your dance experience:</p>
-            <ol>
-                <li>Contact Me: Reach out via email or phone to discuss your event. Whether you’re looking for a performance or a workshop, I’ll tailor everything to meet your needs.</li>
-                <li>Customizable Packages: I offer flexible pricing and packages for all events, from intimate gatherings to large festivals. Let’s discuss your budget, and I’ll create a performance that fits your vision.</li>
-                <li>Book Now: Don’t miss out! Secure your spot and make your event unforgettable with a dance experience from Fusion Dance by Zoia.</li>
-            </ol>
-        </section>
-
-        <!-- Contact Form Section -->
-        <section class="mt-5">
-            <h2>Contacts</h2>
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-12">
-                        <label for="FirstName">First Name:</label>
-                        <input type="text" class="form-control" placeholder="Enter first name" required>
-                    </div>
-                    <div class="form-group col-md-12 mt-2">
-                        <label for="LastName">Last Name:</label>
-                        <input type="text" class="form-control" placeholder="Enter last name" required>
-                    </div>
-                    <div class="form-group col-md-12 mt-2">
-                        <label for="inputEmail14">Email:</label>
-                        <input type="email" class="form-control" id="inputEmail14" placeholder="Enter email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
-                    </div>
-                    <div class="form-group col-md-12 mt-2">
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter phone number" />
-                    </div>
-                    <div class="form-group col-md-12 mb-2 mt-2">
-                        <label for="message">Message / Additional Information:</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Feel free to share any ideas, preferences, or questions you have about the classes." class="form-control"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Submit Inquire</button>
-                    </div>
-                </div>
-            </form>
-        </section>
-
-        <!-- Footer Section -->
         
+        <!-- Main Content -->
+        <div class="container mx-auto mt-5 flex justify-center content-center h-full">
+            <!-- Hero Section -->
+            <div class="flex justify-center mt-5 flex-col content-center sm:flex-row items-center gap-3 h-full">
+                <div class="text-center sm:text-left">
+                    <h1 class="text-7xl font-bold mb-4 ">Fusion Dance by Zoia</h1>
+                    <p class="text-lg mb-6">Welcome to Fusion Dance by Zoia, your go-to destination for unforgettable dance performances in the Algarve. With my passion for belly dance and contemporary dance, I offer captivating performances, immersive workshops, and personalized dance services.</p>
+        
+                    <div class="flex gap-4 justify-center sm:justify-start">
+                        <button class=" border-2 border-white text-white px-6 py-2 bg-purple-400 hover:bg-white hover:text-gray-800 book-btn" href="down">Book Show</button>
+                        <button class="bg-transparent border-2 border-white text-white px-6 py-2 hover:bg-white hover:text-gray-800">Explore More</button>
+                    </div>
+                </div>
+                <img src="./pictures/show-dance.jpeg" class="w-full sm:w-1/2 rounded-lg mt-6 sm:mt-0">
+            </div>
+        </div>
+    </section>
+<section class="text-black	">
+    <!-- About Me Section -->
+    <div class="bg-gray-100 py-12 flex justify-center h-screen">
+        <div class="flex flex-col sm:flex-row max-w-screen-lg items-center gap-8">
+            <div class="w-full sm:w-1/2">
+                <h2 class="text-5xl font-semibold mb-4">About Me</h2>
+                <p class="text-lg">I’m Zoia, a passionate and experienced dancer specializing in belly dance and contemporary styles. With years of performance experience, I bring grace, energy, and storytelling into every movement. My journey in dance has taken me to various stages, private events, and workshops, where I’ve shared my love for artistic expression. My goal is to inspire and connect with audiences through the power of dance.</p>
+            </div>
+            <img src="./pictures/photo-dance.jpeg" class="h-full sm:w-1/2 object-cover rounded-lg">
+        </div>
     </div>
-    <footer class="pg-info container-fluid bg-dark text-white">
-        <p>©Copyright 2025 by me. All rights reversed.</p>
-    </footer>
-    
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</section>
 
+<section class="text-white	">
+    <!-- About Me Section -->
+    <div class="bg-black py-12 flex justify-center h-screen">
+        <div class="flex flex-col sm:flex-row max-w-screen-lg items-center gap-8">
+            <img src="./pictures/event-dance.jpeg" class=" sm:w-1/2 object-cover rounded-lg">
+            <div class="w-full sm:w-1/2">
+                <h2 class="text-5xl  font-semibold mb-4">Why Choose Fusion Dance by Zoia?</h2>
+                <p class="text-lg">Every performance I create is more than just dance—it’s an immersive experience designed to captivate, inspire, and leave a lasting impression. With a blend of grace, emotion, and precision, I bring movement to life in a way that connects with the audience. Whether it’s an intimate gathering or a grand celebration, my goal is to elevate your event with artistry, professionalism, and a touch of magic.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="text-black	">
+    <!-- About Me Section -->
+    <div class="bg-gray-100 py-12 flex justify-center h-screen">
+        <div class="flex flex-col sm:flex-row max-w-screen-lg items-center gap-8">
+            <div class="w-full sm:w-1/2">
+                <h2 class="text-5xl  font-semibold mb-4">Elite Fire and Light Dance Performances</h2>
+                <h3>What I Offer</h3>
+                
+                <ul>
+                    <li class="mb-4"><strong>Fire Dance Performances:</span> Dazzling fire displays, executed with precision and artistry, creating a bold yet elegant performance that commands attention and mesmerizes the audience.</li>
+                    <li li class="mb-4"><strong>Light Dance Shows:</strong> Immersive light performances that transform any space into a realm of enchantm
+                    ent, seamlessly integrating artistry with cutting-edge technology to create a truly magical atmosphere.</li>
+                    <li li class="mb-4"><strong> Choreography: </strong> offer bespoke, tailor-made performances designed to align perfectly with the theme, vision, and essence of your event, ensuring a seamless and unforgettable experience.</li>
+                    <li li class="mb-4"><strong> Workshops and Masterclasses:</strong> Elevate your understanding of fire and light dance with private workshops, offering a rare opportunity to learn from a seasoned professional in a refined, intimate setting.</li>
+                </ul>
+            </div>
+            <img src="./pictures/dance-mountain.jpeg" class="h-[70vh] w-auto object-cover rounded-lg">
+
+    </div>
+</section>
+
+<section class="text-black">
+    <!-- Dance Performances Section -->
+    <div class="bg-gray-100 py-12 flex justify-center h-screen">
+        <div class="text-center">
+            <h2 class="text-5xl font-semibold mb-8">Dance Video Showcase</h2>
+            <p class="text-xl mb-6 px-4">Welcome to my curated Dance Video Showcase. Experience a captivating collection of performances that seamlessly blend artistic expression with dynamic movement. From the graceful flow of belly dance to the powerful energy of contemporary dance, each video embodies the passion, creativity, and elegance that dance brings to life. Allow these performances to inspire and transport you to a world where movement tells a story.</p>
+            <div class="flex flex-col sm:flex-row max-w-screen-lg mx-auto gap-8 justify-center items-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rkpR848bUwU?si=ZSYsuigNktSwi2I3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/v8yxgFU4ZWU?si=lzopKddfh80K1RCT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="text-black text-5xl w-full">
+    <!-- Dance Performances Section -->
+    <div class="bg-gray-100 py-12 flex flex-col items-center h-screen w-full">
+        <h2>Professional Experience</h2>
+        <div class="bg-black w-full">h</div>
+    </div>
+</section>
+
+      
+
+     
+
+       
+
+       <!-- Contact Form Section -->
+       <!-- Contact Form Section -->
+       <section class="py-12 mt-12 bg-black">
+        <div class="container max-w-4xl mx-auto mt-5 flex justify-center">
+          <div class="w-full flex flex-col lg:flex-row">
+            <!-- Contact Form -->
+            <div class="w-full lg:w-1/2">
+              <form method="POST" action="./php/process.php" class="w-full bg-white p-6 shadow-lg">
+                <div class="space-y-6">
+                  <div>
+                    <label for="first-name" class="block text-base font-medium text-gray-700">First Name:</label>
+                    <input type="text" name="first-name" class="w-full py-3 px-3 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 text-black" placeholder="Enter first name" required>
+                  </div>
+                  <div>
+                    <label for="last-name" class="block text-base font-medium text-gray-700">Last Name:</label>
+                    <input type="text" name="last-name" class="w-full py-3 px-3 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 text-black" placeholder="Enter last name" required>
+                  </div>
+                  <div>
+                    <label for="email" class="block text-base font-medium text-gray-700">Email:</label>
+                    <input type="email" name="email" class="w-full py-3 px-3 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 text-black" placeholder="Enter email" required>
+                  </div>
+                  <div>
+                    <label for="phone" class="block text-base font-medium text-gray-700">Phone Number:</label>
+                    <input type="tel" name="phone" class="w-full py-3 px-3 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 text-black" placeholder="Enter phone number" required>
+                  </div>
+                  <div>
+                    <label for="message" class="block text-base font-medium text-gray-700">Message:</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Feel free to share any ideas, preferences, or questions you have about the classes." class="w-full py-3 px-3 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 text-black"></textarea>
+                  </div>
+                  <button type="submit" name="submit" value="submit" class="w-full bg-gradient-to-br bg-gray-800 text-white font-medium text-base px-5 py-2">Submit Inquiry</button>
+                </div>
+              </form>
+            </div>
+      
+            <!-- Contact Information -->
+            <div class="w-full lg:w-1/2 text-left text-white mt-6 lg:mt-0 lg:ml-12" id="down">
+                <h2 class="text-4xl font-semibold mb-4">Contact Information</h2>
+                <div class="mt-6">
+                  <p class="text-lg font-semibold">Location</p>
+                  <p class="text-base">Albufeira, Algarve, Portugal</p>
+        
+                  <p class="text-lg font-semibold mt-4">Email</p>
+                  <p class="text-base"><a href="mailto:contact@fusiondancealgarve.com" class="hover:text-gray-400">contact@fusiondancealgarve.com</a></p>
+        
+                  <p class="text-lg font-semibold mt-4">Phone / WhatsApp</p>
+                  <p class="text-base"><a href="tel:+351912345678" class="hover:text-gray-400">+351 912 345 678</a></p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+       
+
+       <!-- Footer Section -->
+       <footer class="bg-gray-800 text-white text-center mt-0">
+           <p>©Copyright 2025 by me. All rights reserved.</p>
+       </footer>
+   </div>
 </body>
 </html>
