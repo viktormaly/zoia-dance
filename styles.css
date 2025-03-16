@@ -1,4 +1,10 @@
+*{
+  box-sizing: border-box;
+}
+
 html {
+  height: 100%;
+
   font-size: 16px;
   scroll-behavior: smooth;
 }
@@ -7,7 +13,6 @@ body {
   font-style: normal;
   font-size: 1rem;
   line-height: 1.5;
-
   color: white;
 }
 
@@ -24,15 +29,16 @@ h2{
 
 
 /* Ensures the background spans full width */
+/*
 .navbar-wrapper {
   width: 100vw;
-  background-color: #000000; /* Change to desired color */
+  background-color: #000000; 
   padding: 0px 0;
   background-color: rgb(255, 255, 255);
   color: white;
   
 }
-
+*/
 .book-btn{
   background-color: #cc7979;
 }
@@ -60,18 +66,21 @@ footer {
 }
 
 /* Ensures content aligns with body */
+/*
 .navbar {
-  max-width: 1200px; /* Same as your body content */
+  max-width: 1200px; 
   margin: 0 auto;
-}
+}*/
 
 .about-me{
   width: 30vw;
 }
 
+
 /* Gallery item styles */
+/*
 .gallery-item {
-  height: 400px; /* Adjust height as needed */
+  height: 400px; 
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -82,17 +91,17 @@ footer {
   height: 100%;
   width: auto;
   object-fit: cover;
-}
+}*/
 
 div{
   font-weight: 300;
 }
-
+/*
 .about-section-full {
-  width: 100vw; /* Full viewport width */
-  background-color: #f2f2f2; /* Replace with your desired background color */
-  padding: 0px 0; /* Adjust padding for spacing */
-}
+  width: 100vw; /* Full viewport width 
+  //background-color: #f2f2f2; /* Replace with your desired background color 
+  padding: 0px 0; /* Adjust padding for spacing 
+}*/
 
 body, html {
   margin: 0;

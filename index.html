@@ -3,6 +3,8 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Fusion Dance by Zoia offers professional belly dance and contemporary dance performances, workshops, and more in the Algarve. Book a show today!">
+<meta name="keywords" content="belly dance, contemporary dance, Algarve, dance performances, workshops">
    <title>Navbar Example</title>
    <script src="https://cdn.tailwindcss.com"></script>
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,9 +18,9 @@
     <section class="bg-black h-screen">
         <!-- Tailwind Navbar -->
         <nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-100 dark:border-gray-600">
-            <div class="container mx-auto flex items-center justify-between py-4 px-4">
+            <div class="container mx-auto flex items-center justify-between my-4 mx-4">
                 <!-- Logo -->
-                <img src="./pictures/Untitled-1.png" width="120px" class="mr-8">
+                <img src="./pictures/Untitled-1.png" width="120px" class="mr-8" alt="Fusion Dance Logo">
         
                 <!-- Mobile Menu Toggle (Hidden Checkbox) -->
                 <input type="checkbox" id="menu-toggle" class="peer hidden">
@@ -33,133 +35,151 @@
                 <!-- Navbar Links -->
                 <div class="hidden peer-checked:flex lg:flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-6 absolute lg:static top-16 left-0 w-full lg:w-auto bg-white lg:bg-transparent shadow-lg lg:shadow-none p-4 lg:p-0">
                     <a href="#" class="text-black hover:text-gray-400">Home</a>
-                    <a href="#" class="text-black hover:text-gray-400">About</a>
-                    <a href="./contact.php" class="text-black hover:text-gray-400">Contact</a>
+                    <a href="#about" class="text-black hover:text-gray-400">About</a>
+                    <a href="#services" class="text-black hover:text-gray-400">Services</a>
+                    <a href="#contact" class="text-black hover:text-gray-400">Contact</a>
                 </div>
             </div>
         </nav>
         
-
-
-        <!-- Main Content -->
-        <div class="container mx-auto mt-5 flex justify-center items-center h-full">
-            <!-- Hero Section -->
-            <div class="flex items-center gap-6 max-lg:flex-col px-6 w-full">
-                
-                <!-- Text Section -->
-                <div class="flex-1 text-center sm:text-left max-w-xl">
-                    <h1 class="text-6xl font-bold mb-4 max-md:text-5xl text-start">Fusion Dance by Zoia</h1>
-                    <p class="text-lg mb-6 text-start">Welcome to Fusion Dance by Zoia, your go-to destination for unforgettable dance performances in the Algarve. With my passion for belly dance and contemporary dance, I offer captivating performances, immersive workshops, and personalized dance services.</p>
-        
-                    <div class="flex gap-4 justify-center sm:justify-start">
-                        <button class="border-2 border-white text-white px-6 py-2 bg-purple-400 hover:bg-white hover:text-gray-800 book-btn" href="down">Book Show</button>
-                        <button class="bg-transparent border-2 border-white text-white px-6 py-2 hover:bg-white hover:text-gray-800">Explore More</button>
+        <main>
+            <!-- Hero Section - Note pt-24 to account for fixed navbar -->
+            <section class="pt-24 pb-16 md:pb-24 bg-black text-white">
+                <div class="container mx-auto flex justify-center items-center px-6">
+                    <div class="flex lg:py-64 items-center gap-6 max-lg:flex-col w-full">
+                        
+                        <!-- Text Section -->
+                        <div class="flex-1 text-center sm:text-left max-w-xl">
+                            <h1 class="text-5xl md:text-6xl font-bold mb-4 text-start">Fusion Dance by Zoia</h1>
+                            <p class="text-lg mb-6 text-start">Welcome to Fusion Dance by Zoia, your go-to destination for unforgettable dance performances in the Algarve. With my passion for belly dance and contemporary dance, I offer captivating performances, immersive workshops, and personalized dance services.</p>
+                    
+                            <div class="flex gap-4 justify-center sm:justify-start">
+                                <a href="#contact" class="border-2 border-purple-400 text-white px-6 py-2 bg-purple-400 hover:bg-white hover:text-gray-800 hover:border-purple-400 transition-all book-btn">Book Show</a>
+                                <a href="#services" class="bg-transparent border-2 border-white text-white px-6 py-2 hover:bg-white hover:text-gray-800 transition-all">Explore More</a>
+                            </div>
+                        </div>
+                    
+                        <!-- Image Section -->
+                        <div class="flex-1 flex justify-center">
+                            <img src="./pictures/show-dance.jpeg" alt="Fusion Dance Performance" class="w-full max-w-xl h-auto rounded-lg object-cover shadow-lg" loading="lazy">
+                        </div>
+                        
                     </div>
                 </div>
-        
-                <!-- Image Section -->
-                <div class="flex-1 flex justify-center">
-                    <img src="./pictures/show-dance.jpeg" class="w-full max-w-xl h-auto rounded-lg object-contain aspect-[3/2]" loading="lazy">
-                </div>
-                
-            </div>
-        </div>
-
-    <section class="text-black">
-        <!-- About Me Section -->
-        <div class="bg-gray-100 py-12 flex justify-center h-screen px-6">
-            <div class="flex flex-col max-lg:flex-col sm:flex-row max-w-screen-xl items-center gap-8">
-                <div class="w-full sm:w-1/2">
-                    <h2 class="text-5xl font-semibold mb-4">About Me</h2>
-                    <p class="text-lg">I’m Zoia, a passionate and experienced dancer specializing in belly dance and contemporary styles. With years of performance experience, I bring grace, energy, and storytelling into every movement. My journey in dance has taken me to various stages, private events, and workshops, where I’ve shared my love for artistic expression. My goal is to inspire and connect with audiences through the power of dance.</p>
-                </div>
-                <img src="./pictures/photo-dance.jpeg" class="h-full sm:w-1/2 object-cover rounded-lg">
-            </div>
-        </div>
-    </section>
-
-    <section class="text-white">
-        <!-- Why Choose Section -->
-        <div class="bg-black py-12 flex justify-center h-screen px-6">
-            <div class="flex flex-col sm:flex-row max-w-screen-xl items-center gap-8">
-                <img src="./pictures/event-dance.jpeg" class="sm:w-1/2 object-cover rounded-lg">
-                <div class="w-full sm:w-1/2">
-                    <h2 class="text-5xl font-semibold mb-4">Why Choose Fusion Dance by Zoia?</h2>
-                    <p class="text-lg">Every performance I create is more than just dance—it’s an immersive experience designed to captivate, inspire, and leave a lasting impression. With a blend of grace, emotion, and precision, I bring movement to life in a way that connects with the audience. Whether it’s an intimate gathering or a grand celebration, my goal is to elevate your event with artistry, professionalism, and a touch of magic.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="text-black">
-        <!-- Elite Fire and Light Dance Performances Section -->
-        <div class="bg-gray-100 py-12 flex justify-center h-screen">
-            <div class="flex flex-col sm:flex-row max-w-screen-xl items-center gap-8 px-6" >
-                <div class="w-full sm:w-1/2">
-                    <h2 class="text-5xl font-semibold mb-4">Elite Fire and Light Dance Performances</h2>
-                    <h3 class="text-3xl font-semibold mb-2">What I Offer</h3>
-                    
-                    <ul class="text-lg">
-                        <li class="mb-4"><strong>Fire Dance Performances:</strong> Dazzling fire displays, executed with precision and artistry, creating a bold yet elegant performance that commands attention and mesmerizes the audience.</li>
-                        <li class="mb-4"><strong>Light Dance Shows:</strong> Immersive light performances that transform any space into a realm of enchantment, seamlessly integrating artistry with cutting-edge technology to create a truly magical atmosphere.</li>
-                        <li class="mb-4"><strong>Choreography:</strong> Tailor-made performances designed to align perfectly with the theme, vision, and essence of your event, ensuring a seamless and unforgettable experience.</li>
-                        <li class="mb-4"><strong>Workshops and Masterclasses:</strong> Elevate your understanding of fire and light dance with private workshops, offering a rare opportunity to learn from a seasoned professional in a refined, intimate setting.</li>
-                    </ul>
-                </div>
-                <img src="./pictures/dance-mountain.jpeg" class="h-[70vh] w-auto object-cover rounded-lg">
-            </div>
-        </div>
-    </section>
-
-    <section class="text-black">
-        <!-- Dance Video Showcase Section -->
-        <div class="bg-gray-100 py-12 flex justify-center max-md:mt-96">
-            <div class="max-w-screen-xl text-start px-8">
-                <h2 class="text-5xl font-semibold mb">Dance Video Showcase</h2>
-                <p class="text-lg mb-6">
-                    Welcome to my curated Dance Video Showcase. Experience a captivating collection of performances that seamlessly blend artistic expression with dynamic movement. From the graceful flow of belly dance to the powerful energy of contemporary dance, each video embodies the passion, creativity, and elegance that dance brings to life. Allow these performances to inspire and transport you to a world where movement tells a story.
-                </p>
-                <div class="flex flex-col max-md:flex-col max-w-screen-lg gap-8 justify-between items-center">
-                    <iframe class="w-full sm:w-3/4 md:w-1/2 lg:w-1/2" height="315" loading="lazy" 
-                        src="https://www.youtube-nocookie.com/embed/rkpR848bUwU?si=ZSYsuigNktSwi2I3" 
-                        title="YouTube video player" frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
+            </section>
     
-                    <iframe class="w-full sm:w-3/4 md:w-1/2 lg:w-1/2" height="315" loading="lazy" 
-                        src="https://www.youtube-nocookie.com/embed/v8yxgFU4ZWU?si=lzopKddfh80K1RCT" 
-                        title="YouTube video player" frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
+            <!-- About Me Section -->
+            <section id="about" class="py-16 md:py-24 text-black bg-gray-50">
+                <div class="container mx-auto px-6">
+                    <div class="flex max-lg:flex-col items-center gap-8 max-w-screen-xl mx-auto">
+                        <div class="w-full lg:w-1/2">
+                            <h2 class="text-4xl md:text-5xl font-semibold mb-4">About Me</h2>
+                            <p class="text-lg">I'm Zoia, a passionate and experienced dancer specializing in belly dance and contemporary styles. With years of performance experience, I bring grace, energy, and storytelling into every movement. My journey in dance has taken me to various stages, private events, and workshops, where I've shared my love for artistic expression. My goal is to inspire and connect with audiences through the power of dance.</p>
+                        </div>
+                        <div class="w-full lg:w-1/2 mt-6 lg:mt-0">
+                            <img src="./pictures/photo-dance.jpeg" alt="Zoia - Professional Dancer" class="w-full h-auto max-h-[500px] object-cover rounded-lg shadow-xl mx-auto">
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
+    
+            <!-- Why Choose Section -->
+            <section class="py-16 md:py-24 text-white bg-black">
+                <div class="container mx-auto px-6">
+                    <div class="flex max-md:flex-col-reverse items-center gap-8 max-w-screen-xl mx-auto">
+                        <div class="w-full md:w-1/2 mt-6 md:mt-0">
+                            <img src="./pictures/event-dance.jpeg" alt="Performance Event" class="w-full h-auto max-h-[500px] object-cover rounded-lg shadow-xl mx-auto">
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <h2 class="text-4xl md:text-5xl font-semibold mb-4">Why Choose Fusion Dance by Zoia?</h2>
+                            <p class="text-lg">Every performance I create is more than just dance—it's an immersive experience designed to captivate, inspire, and leave a lasting impression. With a blend of grace, emotion, and precision, I bring movement to life in a way that connects with the audience. Whether it's an intimate gathering or a grand celebration, my goal is to elevate your event with artistry, professionalism, and a touch of magic.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <section class="text-black" id="services">
+                <!-- Elite Fire and Light Dance Performances Section -->
+                <div class="py-12 flex justify-center">
+                    <div class="flex flex-col md:flex-row max-w-screen-xl items-center gap-8 px-6 w-full">
+                        <!-- Text Section -->
+                        <div class="w-full md:w-1/2">
+                            <h2 class="text-5xl font-semibold mb-4">Elite Fire and Light Dance Performances</h2>
+                            <h3 class="text-3xl font-semibold mb-2">What I Offer</h3>
+                            <ul class="text-lg">
+                                <li class="mb-4"><strong>Fire Dance Performances:</strong> Dazzling fire displays, executed with precision and artistry, creating a bold yet elegant performance that commands attention and mesmerizes the audience.</li>
+                                <li class="mb-4"><strong>Light Dance Shows:</strong> Immersive light performances that transform any space into a realm of enchantment, seamlessly integrating artistry with cutting-edge technology to create a truly magical atmosphere.</li>
+                                <li class="mb-4"><strong>Choreography:</strong> Tailor-made performances designed to align perfectly with the theme, vision, and essence of your event, ensuring a seamless and unforgettable experience.</li>
+                                <li class="mb-4"><strong>Workshops and Masterclasses:</strong> Elevate your understanding of fire and light dance with private workshops, offering a rare opportunity to learn from a seasoned professional in a refined, intimate setting.</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Image Section -->
+                        <div class="w-full md:w-1/2">
+                            <img src="./pictures/dance-mountain.jpeg" class="h-[70vh] w-full object-cover rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Dance Video Showcase Section -->
+            <section id="videos" class="py-16 md:py-24 text-black bg-white">
+                <div class="container mx-auto px-6">
+                    <div class="max-w-screen-xl mx-auto t">
+                        <h2 class="text-4xl md:text-5xl font-semibold mb-4 text-center">Dance Video Showcase</h2>
+                        <p class="text-lg mb-8 max-w-3xl mx-auto text-left">
+                            Experience a captivating collection of performances that seamlessly blend artistic expression with dynamic movement. From the graceful flow of belly dance to the powerful energy of contemporary dance, each video embodies the passion, creativity, and elegance that dance brings to life.
+                        </p>
+                    
+                        <!-- Video Section -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                            <div class="aspect-w-16 aspect-h-9 shadow-lg rounded-lg overflow-hidden">
+                                <iframe class="w-full h-64 md:h-80" 
+                                        src="https://www.youtube-nocookie.com/embed/rkpR848bUwU?si=ZSYsuigNktSwi2I3" 
+                                        title="YouTube video player" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="aspect-w-16 aspect-h-9 shadow-lg rounded-lg overflow-hidden">
+                                <iframe class="w-full h-64 md:h-80" 
+                                        src="https://www.youtube-nocookie.com/embed/v8yxgFU4ZWU?si=lzopKddfh80K1RCT" 
+                                        title="YouTube video player" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="text-black text-5xl w-full">
+    <!-- Professional Experience Section -->
     <section class="text-black text-5xl w-full">
         <!-- Professional Experience Section -->
-        <div class="bg-white py-12 flex flex-col lg:flex-col items-center w-full px-6">
-            <div class="max-w-screen-xl text-start mb-6 lg:mb-0">
+        <div class="bg-white py-12 flex flex-col lg:flex-col items-center w-full px-8">
+            <div class="max-w-screen-xl text-start mb-6 lg:mb-12"> <!-- Increased margin-bottom for large screens -->
                 <h2 class="text-4xl font-semibold mb-4">Professional Experience</h2>
                 <p class="text-lg">I’ve had the privilege of working with respected venues and brands across the industry. Below is a selection of these collaborations. This is just a small sample of my experience, and I’m happy to provide further details or references upon request.</p>
             </div>
-            <div class="max-w-screen-xl grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-12 justify-center items-center">
-                <img src="./pictures/logo/dom_pedro_vilamoura_01_cropped_896101080665dd563d3850.svg" class="max-w-[100px] h-[120px] object-contain">
-                <img src="./pictures/logo/id8ZALgRHB_1741902346258.png" class="max-w-[150px] h-[150px] object-contain">
-                <img src="./pictures/logo/nau-salgados-palace.svg" class="max-w-[150px] h-[150px] object-contain">
-                <img src="./pictures/logo/real-bellavista-hotel-spa-albufeira-black.svg" class="max-w-[150px] h-[150px] object-contain">
+            <div class="max-w-screen-xl grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-12 justify-center items-center"> <!-- Added margin-top for large screens -->
+                <img src="./pictures/logo/dom_pedro_vilamoura_01_cropped_896101080665dd563d3850.svg" class="max-w-[80px] sm:max-w-[100px] md:max-w-[120px] lg:max-w-[150px] h-auto object-contain">
+                <img src="./pictures/logo/id8ZALgRHB_1741902346258.png" class="max-w-[100px] sm:max-w-[120px] md:max-w-[150px] lg:max-w-[180px] h-auto object-contain">
+                <img src="./pictures/logo/nau-salgados-palace.svg" class="max-w-[100px] sm:max-w-[120px] md:max-w-[150px] lg:max-w-[180px] h-auto object-contain">
+                <img src="./pictures/logo/real-bellavista-hotel-spa-albufeira-black.svg" class="max-w-[100px] sm:max-w-[120px] md:max-w-[150px] lg:max-w-[180px] h-auto object-contain">
             </div>
         </div>
     </section>
+</section>
+                
         
 
         
 
         <!-- Contact Form Section -->
         <!-- Contact Form Section -->
-        <section class="py-12  bg-black">
+        <section class="py-12  bg-black" id="contact">
             <div class="container max-w-4xl mx-auto mt-5 max-w-screen-xl flex flex-col px-6 justify-center">
                             
             
@@ -218,7 +238,7 @@
         
 
         <!-- Footer Section -->
-        <footer class="bg-gray-800 text-white text-center mt-0">
+        <footer class="bg-gray-900 text-white text-center mt-0">
             <p>©Copyright 2025 by me. All rights reserved.</p>
             <div>Livro de Reclamações</div>
             <div>Política Privaciddde</div>
