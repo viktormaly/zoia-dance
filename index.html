@@ -41,26 +41,33 @@
 
 
         <!-- Main Content -->
-    <div class="container mx-auto mt-5 flex justify-center content-center h-full">
-        <!-- Hero Section -->
-        <div class="flex justify-center mt-5 max-md:flex-col content-center items-center gap-3 h-full px-8">
-            <div class="text-center max-w-screen-xl sm:text-left">
-                <h1 class="text-7xl font-bold mb-4 max-md:text-5xl text-start">Fusion Dance by Zoia</h1>
-                <p class="text-lg mb-6 text-start">Welcome to Fusion Dance by Zoia, your go-to destination for unforgettable dance performances in the Algarve. With my passion for belly dance and contemporary dance, I offer captivating performances, immersive workshops, and personalized dance services.</p>
-
-                <div class="flex gap-4 justify-center sm:justify-start">
-                    <button class="border-2 border-white text-white px-6 py-2 bg-purple-400 hover:bg-white hover:text-gray-800 book-btn" href="down">Book Show</button>
-                    <button class="bg-transparent border-2 border-white text-white px-6 py-2 hover:bg-white hover:text-gray-800">Explore More</button>
+        <div class="container mx-auto mt-5 flex justify-center items-center h-full">
+            <!-- Hero Section -->
+            <div class="flex items-center gap-6 max-lg:flex-col px-6 w-full">
+                
+                <!-- Text Section -->
+                <div class="flex-1 text-center sm:text-left max-w-xl">
+                    <h1 class="text-6xl font-bold mb-4 max-md:text-5xl text-start">Fusion Dance by Zoia</h1>
+                    <p class="text-lg mb-6 text-start">Welcome to Fusion Dance by Zoia, your go-to destination for unforgettable dance performances in the Algarve. With my passion for belly dance and contemporary dance, I offer captivating performances, immersive workshops, and personalized dance services.</p>
+        
+                    <div class="flex gap-4 justify-center sm:justify-start">
+                        <button class="border-2 border-white text-white px-6 py-2 bg-purple-400 hover:bg-white hover:text-gray-800 book-btn" href="down">Book Show</button>
+                        <button class="bg-transparent border-2 border-white text-white px-6 py-2 hover:bg-white hover:text-gray-800">Explore More</button>
+                    </div>
                 </div>
+        
+                <!-- Image Section -->
+                <div class="flex-1 flex justify-center">
+                    <img src="./pictures/show-dance.jpeg" class="w-full max-w-xl h-auto rounded-lg object-contain aspect-[3/2]">
+                </div>
+                
             </div>
-            <img src="./pictures/show-dance.jpeg" class="w-full sm:w-1/2 rounded-lg mt-6 sm:mt-0">
         </div>
-    </div>
 
     <section class="text-black">
         <!-- About Me Section -->
-        <div class="bg-gray-100 py-12 flex justify-center h-screen px-8">
-            <div class="flex flex-col sm:flex-row max-w-screen-xl items-center gap-8">
+        <div class="bg-gray-100 py-12 flex justify-center h-screen px-6">
+            <div class="flex flex-col max-lg:flex-col sm:flex-row max-w-screen-xl items-center gap-8">
                 <div class="w-full sm:w-1/2">
                     <h2 class="text-5xl font-semibold mb-4">About Me</h2>
                     <p class="text-lg">I’m Zoia, a passionate and experienced dancer specializing in belly dance and contemporary styles. With years of performance experience, I bring grace, energy, and storytelling into every movement. My journey in dance has taken me to various stages, private events, and workshops, where I’ve shared my love for artistic expression. My goal is to inspire and connect with audiences through the power of dance.</p>
@@ -72,7 +79,7 @@
 
     <section class="text-white">
         <!-- Why Choose Section -->
-        <div class="bg-black py-12 flex justify-center h-screen px-8">
+        <div class="bg-black py-12 flex justify-center h-screen px-6">
             <div class="flex flex-col sm:flex-row max-w-screen-xl items-center gap-8">
                 <img src="./pictures/event-dance.jpeg" class="sm:w-1/2 object-cover rounded-lg">
                 <div class="w-full sm:w-1/2">
@@ -86,7 +93,7 @@
     <section class="text-black">
         <!-- Elite Fire and Light Dance Performances Section -->
         <div class="bg-gray-100 py-12 flex justify-center h-screen">
-            <div class="flex flex-col sm:flex-row max-w-screen-xl items-center gap-8 px-8" >
+            <div class="flex flex-col sm:flex-row max-w-screen-xl items-center gap-8 px-6" >
                 <div class="w-full sm:w-1/2">
                     <h2 class="text-5xl font-semibold mb-4">Elite Fire and Light Dance Performances</h2>
                     <h3 class="text-3xl font-semibold mb-2">What I Offer</h3>
@@ -108,11 +115,23 @@
         <div class="bg-gray-100 py-12 flex justify-center max-md:mt-96">
             <div class="max-w-screen-xl text-start px-8">
                 <h2 class="text-5xl font-semibold mb">Dance Video Showcase</h2>
-                <p class="text-lg mb-6">Welcome to my curated Dance Video Showcase. Experience a captivating collection of performances that seamlessly blend artistic expression with dynamic movement. From the graceful flow of belly dance to the powerful energy of contemporary dance, each video embodies the passion, creativity, and elegance that dance brings to life. Allow these performances to inspire and transport you to a world where movement tells a story.</p>
+                <p class="text-lg mb-6">
+                    Welcome to my curated Dance Video Showcase. Experience a captivating collection of performances that seamlessly blend artistic expression with dynamic movement. From the graceful flow of belly dance to the powerful energy of contemporary dance, each video embodies the passion, creativity, and elegance that dance brings to life. Allow these performances to inspire and transport you to a world where movement tells a story.
+                </p>
                 <div class="flex flex-col max-md:flex-col max-w-screen-lg gap-8 justify-between items-center">
-                    <iframe class="w-full sm:w-3/4 md:w-1/2 lg:w-1/2" height="315" loading="lazy" src="https://www.youtube.com/embed/rkpR848bUwU?si=ZSYsuigNktSwi2I3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="w-full sm:w-3/4 md:w-1/2 lg:w-1/2" height="315" loading="lazy" 
+                        src="https://www.youtube-nocookie.com/embed/rkpR848bUwU?si=ZSYsuigNktSwi2I3" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
     
-                    <iframe class="w-full sm:w-3/4 md:w-1/2 lg:w-1/2" height="315" loading="lazy" src="https://www.youtube.com/embed/v8yxgFU4ZWU?si=lzopKddfh80K1RCT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="w-full sm:w-3/4 md:w-1/2 lg:w-1/2" height="315" loading="lazy" 
+                        src="https://www.youtube-nocookie.com/embed/v8yxgFU4ZWU?si=lzopKddfh80K1RCT" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </div>
@@ -120,7 +139,7 @@
 
     <section class="text-black text-5xl w-full">
         <!-- Professional Experience Section -->
-        <div class="bg-white py-12 flex flex-col lg:flex-col items-center w-full px-8">
+        <div class="bg-white py-12 flex flex-col lg:flex-col items-center w-full px-6">
             <div class="max-w-screen-xl text-start mb-6 lg:mb-0">
                 <h2 class="text-4xl font-semibold mb-4">Professional Experience</h2>
                 <p class="text-lg">I’ve had the privilege of working with respected venues and brands across the industry. Below is a selection of these collaborations. This is just a small sample of my experience, and I’m happy to provide further details or references upon request.</p>
@@ -140,7 +159,7 @@
         <!-- Contact Form Section -->
         <!-- Contact Form Section -->
         <section class="py-12  bg-black">
-            <div class="container max-w-4xl mx-auto mt-5 max-w-screen-xl flex flex-col px-8 justify-center">
+            <div class="container max-w-4xl mx-auto mt-5 max-w-screen-xl flex flex-col px-6 justify-center">
                             
             
             <div class="w-full flex lg:flex-row ">
@@ -205,5 +224,7 @@
             <div>Resolução Alternativa</div>
         </footer>
     </div>
+
+    <script src="main.js"></script>
     </body>
     </html>
