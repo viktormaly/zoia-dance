@@ -3,8 +3,6 @@
 }
 
 html {
-  height: 100%;
-
   font-size: 16px;
   scroll-behavior: smooth;
 }
@@ -18,33 +16,10 @@ body {
 
 h1, h2 {
   font-weight: 700; /* Bold weight */
-  font-family: "Lato", serif;
   font-weight: 400;
 
 }
 
-h2{
-  font-size: 1.875rem;
-}
-
-
-/* Ensures the background spans full width */
-/*
-.navbar-wrapper {
-  width: 100vw;
-  background-color: #000000; 
-  padding: 0px 0;
-  background-color: rgb(255, 255, 255);
-  color: white;
-  
-}
-*/
-
-
-button{
-  width: 180px;
-
-}
 
 .book-btn{
   background-color: rgb(172, 83, 116);
@@ -52,9 +27,6 @@ button{
   color: white;
 }
 
-.about-section{
-  background-color: rgb(61, 76, 173);
-}
 
 footer {
   background-color: #f8f9fa;
@@ -63,43 +35,10 @@ footer {
   margin-top: 40px;
 }
 
-/* Ensures content aligns with body */
-/*
-.navbar {
-  max-width: 1200px; 
-  margin: 0 auto;
-}*/
-
 .about-me{
   width: 30vw;
 }
 
-
-/* Gallery item styles */
-/*
-.gallery-item {
-  height: 400px; 
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gallery-item img {
-  height: 100%;
-  width: auto;
-  object-fit: cover;
-}*/
-
-div{
-  font-weight: 300;
-}
-/*
-.about-section-full {
-  width: 100vw; /* Full viewport width 
-  //background-color: #f2f2f2; /* Replace with your desired background color 
-  padding: 0px 0; /* Adjust padding for spacing 
-}*/
 
 body, html {
   margin: 0;
