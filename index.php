@@ -18,7 +18,7 @@
 <nav>
     <section class="bg-black h-screen">
         <!-- Tailwind Navbar -->
-        <nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-100 dark:border-gray-600">
+        <nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-100 dark:border-gray-600  ">
     <div class="container mx-auto flex items-center justify-between my-4 mx-4 max-lg:px-6 md:px-8">
         <!-- Logo -->
         <img src="./pictures/Untitled-1.png" width="120px" class="mr-8" alt="Fusion Dance Logo">
@@ -34,11 +34,11 @@
         </label>
     
         <!-- Navbar Links -->
-        <div class="hidden text-cyan-900 flex lg:flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-6 absolute lg:static top-16 left-0 w-full lg:w-auto bg-white lg:bg-transparent shadow-lg lg:shadow-none p-4 lg:p-0 sm:p-6">
-            <a href="#" class="text-purple-800 font-semibold hover:text-purple-400">Home</a>
-            <a href="#about" class="text-purple-800 font-semibold hover:text-purple-400">About</a>
-            <a href="#services" class="text-purple-800 font-semibold hover:text-purple-400">Services</a>
-            <a href="#contact" class="bg-purple-800 text-white font-semibold px-6 py-2 hover:bg-purple-800 hover:text-white transition-all">Contact</a>
+        <div class="hidden flex lg:flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-6 absolute lg:static top-16 left-0 w-full lg:w-auto bg-white lg:bg-transparent shadow-lg lg:shadow-none p-4 lg:p-0 sm:p-6">
+            <a href="#" class="text-black font-medium  hover:text-purple-400">Home</a>
+            <a href="#about" class="text-black  font-medium hover:text-purple-400">About</a>
+            <a href="#services" class="text-black  font-medium  hover:text-purple-400">Services</a>
+            <a href="#contact" class="bg-violet-800 text-white font-medium  px-6 py-2 hover:bg-purple-800 hover:text-white transition-all">Contact</a>
         </div>
     </div>
 </nav>
@@ -247,10 +247,13 @@
 
         <!-- Footer Section -->
         <footer class="bg-gray-900 text-white text-center mt-0">
+            <div class="flex justify-center gap-4">
+                <a href="https://www.livroreclamacoes.pt/Inicio/">Livro de Reclamações 
+                </a>
+                <div>Política de Privacidade</div>
+                <div>Resolução Alternativa</div>
+            </div>
             <p>©Copyright 2025 by me. All rights reserved.</p>
-            <div>Livro de Reclamações</div>
-            <div>Política Privaciddde</div>
-            <div>Resolução Alternativa</div>
         </footer>
     </div>
 
